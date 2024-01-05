@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Message for [Your Crush's Name]</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            padding: 20px;
+            color: white;
+            font-size: 24px;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        #heart {
+            color: #ff5252;
+            font-size: 48px;
+            animation: heartbeat 1s infinite;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        #login-form {
+            max-width: 300px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #login-form label {
+            display: block;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        #login-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        #login-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>A Special Message for you</h1>
+    </header>
+
+    <section>
+        <div id="heart">&hearts;</div>
+
+        <div id="login-form">
+            <h2>Login</h2>
+            <form onsubmit="login(event)">
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+                <br>
+                <a href="main-shit.html"><button type="submit">Login</button></a>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>Created with by Tuvshinbayr</p>
+    </footer>
+
+    <script>
+        function login(event) {
+            event.preventDefault();
+            const password = document.getElementById('password').value;
+
+            // Check the password
+            if (password === 'Longing') {
+                // If the password is correct, show the special message
+                window.location.href = 'main-shit.html';
+            } else {
+                alert('Incorrect password. Please try again.');
+            }
+        }
+    </script>
+
+</body>
+</html>

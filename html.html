@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>instagram</title>
+</head>
+<style>
+    body{
+        margin: 100px;
+        width: 100%;
+        height: auto;
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container{
+        width: 355px;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border: 1px solid rgb(184, 178, 178);
+        margin: 5%;
+    }
+    .icon{
+        width: 170px;
+        margin: auto;
+        margin: 20px;
+    }
+    .form{
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .email{
+        width: 250px;
+        height: 30px;
+        margin: 2px;
+        border: 1px solid rgb(195, 189, 189);
+        border-radius: 3px;
+    }
+    .Password{
+        width: 250px;
+        height: 30px;
+        margin: 2px;
+        border: 1px solid rgb(195, 189, 189);
+        border-radius: 3px;
+    }
+    .buttn{
+        width: 258px;
+        height: 30px;
+        margin: 20px;
+        border-radius: 6px;
+        border: none;
+        color: aliceblue;
+        background-color: rgb(113, 178, 238);
+        cursor: pointer;
+    }
+    .line{
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .or{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color:  rgb(132, 121, 121);
+        
+    }
+    .or::before{
+        content: "";
+        height: 0.5px;
+        width:115px;
+        background-color:  rgb(195, 189, 189);
+        display: block;
+    }
+    .or::after{
+        content: "";
+        height: 0.5px;
+        width: 115px;
+        background-color:  rgb(195, 189, 189);
+        display: block;
+    }
+    .fbntr{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .fb{
+        width: 20px;
+        align-items: center;
+        justify-content: center:
+    }
+</style>
+<body>
+   <div class="container">
+        <div class="logo">
+            <img src="Logo-instagram.png" class="icon"></img>
+        </div>
+        <div>
+            <form class="form">
+                <input type="email" placeholder="Phone number, username, or email" class="email">
+                <input type="text number" placeholder="Password" class="Password">
+                <div>
+                    <input type="button" value="Log in" class="buttn">
+                </div>
+            </form>
+            <div class="fbntr">
+                <div class="line">
+                    <p class="or">OR</p>
+                </div>
+                <div>
+                    <a href="https://www.facebook.com/home.php"><img src="facebook.png" class="fb"></img></a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/accounts/password/reset/"><p>forgot password?</p></a>
+                </div>
+            </div>
+        </div>
+   </div>
+</body>
+</html>
